@@ -25,7 +25,7 @@ of what each of the values mean.
 export const info = {
     firstName: "Rachael",
     lastName: "Yonoff",
-    initials: "ry", // the example uses first and last, but feel free to use three or more if you like.
+    initials: "RY", // the example uses first and last, but feel free to use three or more if you like.
     position: "a Systems Engineer",
     selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
     gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
@@ -61,43 +61,54 @@ export const info = {
             icon: "fa fa-linkedin",
             label: 'linkedin'
         },
+    
       
 // Feel free to remove any of these that you don't have. I'll write an FAQ on how to add new ones later, let me know if you have a request for an icon!
 // Just change the links so that they lead to your social profiles.
 
     ],
-    bio: "Hello! I'm Rachael. I'm a Systems Engineer for Leidos UK. I studied Digital Culture at King's College London, I enjoy long walks on the beach, and I believe artificial intelligence will inevitably rule us all one day. You should hire me!",
+    bio: "Hello! I'm Rachael. I'm a Systems Engineer for Leidos UK. I studied Digital Culture at King's College London, and have a huge desire to be creative. Feel free to contact me!",
     skills:
         {
-            proficientWith: ['javascript', 'react', 'git', 'github', 'bootstrap', 'html5', 'css3', 'figma'],
-            exposedTo: ['nodejs', 'python', 'adobe illustrator']
+            proficientWith: ['javascript', 'react', 'git', 'github', 'bootstrap', 'html5', 'css3', 'figma', 'agile', 'canva'],
+            exposedTo: ['nodejs', 'python', 'adobe photoshop', 'django', 'salesforce', 'mongoDB', 'express', 'sql', 'java','heroku', 'netlify', 'typescript']
         }
     ,
     hobbies: [
         {
-            label: 'reading',
-            emoji: '📖'
+            label: 'gaming',
+            emoji: '🎮'
         },
         {
             label: 'theater',
-            emoji: '🎭'
+            emoji: '🎭',
+            link: "https://letterboxd.com/movierach/"
         },
         {
             label: 'movies',
             emoji: '🎥'
         },
         {
-            label: 'cooking',
-            emoji: '🌶'
+            label: 'baking',
+            emoji: '👩‍🍳'
+        },
+        { 
+            label: 'traveling',
+            emoji: '✈️'
+
+        },
+        {
+            label:'rowing',
+            emoji: '🚣‍♀️'
         }
 // Same as above, change the emojis to match / relate to your hobbies or interests.
 // You can also remove the emojis if you'd like, I just think they look cute :P
     ],
     portfolio: [ // This is where your portfolio projects will be detailed
         {
-            title: "Project 1",
-            live: "https://paytonpierce.dev", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-            source: "https://github.com/paytonjewell", // this should be a link to the **repository** of the project, where the code is hosted.
+            title: "Thyme's Up - Fridge/Recipe App",
+            live: "https://thymesup.netlify.app/", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+            source: "https://github.com/Tea-Thyme/Thyme-Frontend", // this should be a link to the **repository** of the project, where the code is hosted.
             image: mock1
         },
         {
