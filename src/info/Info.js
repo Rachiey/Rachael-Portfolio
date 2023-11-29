@@ -42,10 +42,6 @@ export const info = {
         {
             emoji: "💼",
             text: "Systems Engineer at Leidos"
-        },
-        {
-            emoji: "📧",
-            text: "rachaelyonoff@gmail.com"
         }
     ],
     socials: [
