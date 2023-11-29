@@ -107,32 +107,37 @@ export const info = {
     portfolio: [ // This is where your portfolio projects will be detailed
         {
             title: "Thyme's Up - Fridge/Recipe App",
+            title2: "React, Node, Express, Django, Django Rest Framework,  Python",
             live: "https://thymesup.netlify.app/", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
             source: "https://github.com/Tea-Thyme/Thyme-Frontend", // this should be a link to the **repository** of the project, where the code is hosted.
             image: mock1
         },
         {
-            title: "Kahtwoot - General Knowledge Quiz App",
+            title: "Kahtwoot - Quiz App",
+            title2: "React, Redux, PostgreSQL, Heroku, Netlify",
             live: "https://kahtwoot.netlify.app/",
             source: "https://github.com/Rachiey/universally-challenged",
             image: mock2
         },
         {
-            title: "Project 3",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
+            title: "StudentHub - Social Media App",
+            title2: "React, NodeJS, Netlify, Django, Djagno Rest Framework, Python, PostgreSQL, Heroku",
+            live: "https://student-hubs.netlify.app/",
+            source: "https://github.com/Rachiey/Student-Spot-Lap4/tree/main",
             image: mock3
         },
         {
-            title: "Project 4",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
+            title: "League of Rilakkuma - League of Legends Companion App (WIP)",
+            title2: "VueJS, Typescript, TailwindCSS",
+            live: "",
+            source: "",
             image: mock4
         },
         {
-            title: "Project 5",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
+            title: "Personalitea - Group Planning App (WIP)",
+            title2: "React, Node, Express, Django, Dyango Rest Framework, Python",
+            live: "",
+            source: "",
             image: mock5
         }
     ]
