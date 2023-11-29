@@ -112,9 +112,9 @@ export const info = {
             image: mock1
         },
         {
-            title: "Project 2",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
+            title: "Kahtwoot - General Knowledge Quiz App",
+            live: "https://kahtwoot.netlify.app/",
+            source: "https://github.com/Rachiey/universally-challenged",
             image: mock2
         },
         {
