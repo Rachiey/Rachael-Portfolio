@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Style from './Navbar.module.scss';
 import Toggler from "./home/Toggler";
 import {Link, useLocation} from "react-router-dom";
@@ -32,6 +32,20 @@ const links = [
 export default function Navbar({darkMode, handleClick}) {
     const location = useLocation()
     const [active, setActive] = useState(location.pathname === '/' ? 'home' : location.pathname.slice(1, location.pathname.length));
+    const [isMobileView, setIsMobileView] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+          setIsMobileView(window.innerWidth <= 768); // Change 768 to your desired breakpoint
+        };
+    
+        handleResize(); // Check on initial render
+    
+        window.addEventListener('resize', handleResize);
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+      }, []);
 
     return (
         <Box component={'nav'} width={'100%'}>
@@ -40,7 +54,7 @@ export default function Navbar({darkMode, handleClick}) {
                  textTransform={'lowercase'} fontSize={'1rem'}>
                 {links.map((link, index) => (
                     <Box key={index} component={'li'} className={(link.active === active && !link.type) && Style.active}
-                         sx={{borderImageSource: info.gradient}}>
+                    sx={{ borderImageSource: info.gradient, display: isMobileView && link.type ? 'none' : 'block' }}>
                         <Link to={link.to} onClick={() => setActive(link.active)} className={Style.link}>
                             {!link.type && <p style={{padding: '0.5rem 0'}}>{link.name}</p>}
                             {link.type && <h1>{link.name}</h1>}
